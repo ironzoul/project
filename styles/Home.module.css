@@ -176,7 +176,14 @@
   font-size: 1.25rem;
   line-height: 1.5;
 }
-
+.big {
+  width: 1280px;
+  height: 740px;
+  box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.05);
+  background-color: #d77878;
+  overflow: hidden;
+  border-radius: 20px;
+}
 
 @media (max-width: 600px) {
   .grid {

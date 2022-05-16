@@ -3,6 +3,8 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import { sanityClient,urlFor } from '../lib/sanity'
 import Link from 'next/link'
+import { motion } from 'framer-motion';
+
 
 const jobsQuery = `*[_type == "job"]{
   _id,
@@ -17,29 +19,35 @@ export default function Recruited({jobs}) {
   
   return (
     <>
-    <div>
+    
       <Head>
         <title>Job Portal</title>
         <meta name="Online job site" content="created by Ketan Pal" />
         <link rel="icon" href="/jplogo.jpg" />
       </Head>
         <main className={styles.main}>
-        <h1 className={styles.title}>
-          Available jobs
-        </h1>
+        
             
         <div className={styles.grid}>
+        
           {jobs?.length > 0 && jobs.map((job) =>(
         
           <Link href="/">
             <a href="/" className={styles.jobcard}>
-            <span><h2>{job.image}</h2>
-            </span>
+            <motion.div  className="card" whileHover={{
+                scale: 1.3,
+                transition: {
+                  duration: .2
+                }
+              }}><span><h2 align="center">&nbsp;&nbsp;{job.image}</h2>
+            </span></motion.div>
                     
           </a> 
+         
           </Link>
         
         ))}
+        
         </div>
 
         </main>
@@ -58,7 +66,7 @@ export default function Recruited({jobs}) {
           Ketan Pal
         </a>
       </footer>
-    </div>
+    
     </>
   )
 }

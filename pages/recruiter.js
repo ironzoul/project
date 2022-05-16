@@ -23,10 +23,6 @@ export default function Recruiter({jobs}) {
         <link rel="icon" href="/jplogo.jpg" />
       </Head>
         <main className={styles.main}>
-        <img src="/jplogo.jpg" alt="jobs24x7 logo" width= {80} height = {80}/ >
-        <h1 className={styles.title}>
-          <a href="/">Jobs24X7</a>
-        </h1>
 
             <h2> Post jobs</h2>
 

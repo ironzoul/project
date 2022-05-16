@@ -1,3 +1,34 @@
-.anony{
-	display: flex;
+.nav{
+    height: 4rem;
+    left: 0px;
+    top: -22px;
+    background: #3599F5;
+    border-radius: 20px;
+    justify-content: center;
+    flex: 1;
+    display: flex;
+    
+
+    
+}
+.nav a {
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 20px;
+    color: #f0f8ff;
+    text-decoration: none;
+    display: flex;
+    width: 15%;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+   
+}
+
+
+
+body {
+    background-color:#f0f8ff;
 }
