@@ -4,9 +4,8 @@ import styles from '../styles/Home.module.css'
 import { sanityClient,urlFor } from '../lib/sanity'
 import Link from 'next/link'
 import TextField from '@mui/material/TextField';
-import InputLabel from '@mui/material/InputLabel';
-import OutlinedInput from '@mui/material/OutlinedInput';
 import FormControl from '@mui/material/FormControl';
+
 
 
 const jobsQuery = `*[_type == "job"]{
@@ -29,33 +28,24 @@ export default function Recruiter({jobs}) {
       </Head>
         <main className={styles.main}>
 
-            <h2> Post jobs</h2>
+            
 
         <form className={styles.postcard}>
-          <input  type="hidden" name="_id" />
-                          
+          
+        <h1> Post jobs</h1>
           <label >
             <span ><h3>Organization</h3></span><br />
             <FormControl fullWidth sx={{ m: 1 }}>
-          <InputLabel htmlFor="outlined-adornment-amount">Organization</InputLabel>
-          <OutlinedInput
-            id="outlined-adornment-amount"
-            value=" organization name "
-            label="Required"
-          />
+            <input  type="visible" name="_id" placeholder='&nbsp;&nbsp;Organization Name'/>
         </FormControl>
             </label>
             <br />
                                                                                                                           
           <label >
             <span ><h3>Job Title</h3></span><br />
-            <FormControl fullWidth sx={{ m: 1 }}>
-          <InputLabel htmlFor="outlined-adornment-amount">Job Title</InputLabel>
-          <OutlinedInput
-            id="outlined-adornment-amount"
-            value="Job Title"
-            label="Required"
-          />
+            <FormControl fullWidth sx={{ m: 1 }} background="white">
+          
+          <input  type="visible" name="_id" placeholder='&nbsp;&nbsp;Job title'/>
         </FormControl>
             
           </label>

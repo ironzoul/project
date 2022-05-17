@@ -29,7 +29,6 @@ export default function Home() {
             scale: 1,
             opacity: 1,
             transition: {
-              delay: .4,
               duration: 2,
             }
           },
