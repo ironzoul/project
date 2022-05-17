@@ -147,10 +147,12 @@
 .postcard {
   margin: 1rem;
   padding: 1.5rem;
-  text-align: left;
+  text-align: center;
   color: inherit;
+  background-color: aquamarine;
   text-decoration: none;
-  border : 1px solid #0070f3;
+  border : none;
+  box-shadow: 0px 40px 80px 0px rgba(0, 0, 0, 0.05), inset 0px -10px 20px 0px rgba(0, 0, 0, 0.05), 0px 10px 20px 0px rgba(0, 0, 0, 0.05);
   border-radius: 10px;
   transition: color 0.15s ease, border-color 0.15s ease;
   width: 80%;
@@ -160,10 +162,7 @@
 .postcard:hover,
 .postcard:focus,
 .postcard:active {
-  color: #0070f3;
-  border-color: #0070f3;
-  box-shadow:#878686 2px 2px;
-  opacity: 0.8;
+  shadow: none;
 }
 
 .postcard h2 {
@@ -182,6 +181,17 @@
   box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.05);
   background-color: #d77878;
   overflow: hidden;
+  border-radius: 20px;
+}
+
+.postcard input {
+  
+  width: 80%;
+  height: 50px;
+  left: 579px;
+  top: 537px;
+  border: none;
+  background: #C4C4C4;
   border-radius: 20px;
 }
 

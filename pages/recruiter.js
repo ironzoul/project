@@ -31,13 +31,13 @@ export default function Recruiter({jobs}) {
                           
           <label >
             <span ><h3>Organization</h3></span><br />
-            <input name="name"  placeholder="Enter Organization Name"/>
+            <input name="name"  placeholder="&nbsp;&nbsp;Enter Organization Name"/>
             </label>
             <br />
                                                                                                                           
           <label >
             <span ><h3>Job Title</h3></span><br />
-            <input name="email" type="email"  placeholder="Enter Job Title"/>
+            <input name="email" type="email"  placeholder="&nbsp;&nbsp;Enter Job Title"/>
           </label>
 
           <label >
