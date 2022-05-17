@@ -3,6 +3,11 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import { sanityClient,urlFor } from '../lib/sanity'
 import Link from 'next/link'
+import TextField from '@mui/material/TextField';
+import InputLabel from '@mui/material/InputLabel';
+import OutlinedInput from '@mui/material/OutlinedInput';
+import FormControl from '@mui/material/FormControl';
+
 
 const jobsQuery = `*[_type == "job"]{
   _id,
@@ -31,18 +36,41 @@ export default function Recruiter({jobs}) {
                           
           <label >
             <span ><h3>Organization</h3></span><br />
-            <input name="name"  placeholder="&nbsp;&nbsp;Enter Organization Name"/>
+            <FormControl fullWidth sx={{ m: 1 }}>
+          <InputLabel htmlFor="outlined-adornment-amount">Organization</InputLabel>
+          <OutlinedInput
+            id="outlined-adornment-amount"
+            value=" organization name "
+            label="Required"
+          />
+        </FormControl>
             </label>
             <br />
                                                                                                                           
           <label >
             <span ><h3>Job Title</h3></span><br />
-            <input name="email" type="email"  placeholder="&nbsp;&nbsp;Enter Job Title"/>
+            <FormControl fullWidth sx={{ m: 1 }}>
+          <InputLabel htmlFor="outlined-adornment-amount">Job Title</InputLabel>
+          <OutlinedInput
+            id="outlined-adornment-amount"
+            value="Job Title"
+            label="Required"
+          />
+        </FormControl>
+            
           </label>
 
           <label >
             <span ><h3>Description</h3></span><br />
-            <textarea  name="comment"  rows="8" placeholder="Enter some details about this job post."></textarea>
+            <FormControl fullWidth sx={{ m: 1 }}>
+          <TextField
+          id="outlined-multiline-flexible"
+          label="Description"
+          multiline
+          maxRows={4}
+          
+        />
+        </FormControl>
           </label><br />
                                                                                   
           {/* errors will return when field validation fails  */}

@@ -186,13 +186,17 @@
 
 .postcard input {
   
-  width: 80%;
+  
   height: 50px;
   left: 579px;
   top: 537px;
   border: none;
-  background: #C4C4C4;
-  border-radius: 20px;
+  background: #ffffff;
+  border-radius: 5px;
+  
+}
+#outlined-required {
+  width: 100%;
 }
 
 @media (max-width: 600px) {

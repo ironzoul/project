@@ -5,6 +5,7 @@ import styles from '../styles/Home.module.css'
 import { motion } from 'framer-motion';
 
 
+
 export default function Home() {
   return (
     <>
@@ -14,8 +15,9 @@ export default function Home() {
         <meta name="Online job site" content="created by Ketan Pal" />
         <link rel="icon" href="/jplogo.jpg" />
       </Head>
-
+      
       <main className={styles.main}>
+      
       
         <img src="/jplogo.jpg" alt="jobs24x7 logo" width= {80} height = {80}/ >
         <motion.div initial="hidden" animate="visible" variants={{

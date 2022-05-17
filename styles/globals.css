@@ -1,5 +1,7 @@
 .nav{
-    height: 4rem;
+    position: absolute;
+    height: 6rem;
+    width: 100%;
     left: 0px;
     top: -22px;
     background: #3599F5;
@@ -7,15 +9,14 @@
     justify-content: center;
     flex: 1;
     display: flex;
-    
-
-    
-}
-.nav a {
     font-family: 'Josefin Sans';
     font-style: normal;
     font-weight: 400;
     font-size: 40px;
+    
+}
+.nav a {
+    margin-top: 1rem;
     line-height: 20px;
     color: #f0f8ff;
     text-decoration: none;
@@ -24,7 +25,9 @@
     align-items: center;
     text-align: center;
     justify-content: space-evenly;
-   
+}
+.nav img {
+    margin-top: 1.5rem;
 }
 
 
