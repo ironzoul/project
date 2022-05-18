@@ -32,7 +32,7 @@ export default function Recruited({jobs}) {
         
           {jobs?.length > 0 && jobs.map((job) =>(
         
-          <Link href={`/jobs/${job.image.current}`}>
+          <Link href="/">
             <a  className={styles.jobcard}>
             <motion.div  className="card" whileHover={{
                 scale: 1.3,
