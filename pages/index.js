@@ -80,6 +80,9 @@ export default function Home() {
             
           </span>
           Ketan Pal
+        </a><br />
+        <a href = '/contact'>
+          contact
         </a>
       </footer>
     </div>
