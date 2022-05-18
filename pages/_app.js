@@ -1,6 +1,8 @@
 import Link from 'next/link'
 import '../styles/globals.css'
 import { motion } from 'framer-motion';
+import styles from '../styles/Home.module.css'
+import Image from 'next/image'
 
 const variants = {
   hidden: { opacity: 0, x: -200, y: 0 },
@@ -26,6 +28,23 @@ function MyApp({ Component, pageProps }) {
     className=""
 >
   <Component {...pageProps} /></motion.main>
+  <footer className={styles.footer}>
+        <a
+          href="https://github.com/ironzoul"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Made with ♥ by{' '}
+          <span className={styles.logo}>
+            <Image src="/GitHub.png" alt="Git" width={20} height={20} />
+            
+          </span>
+          Ketan Pal
+        </a><br />
+        <a href = '/contact'>
+          contact
+        </a>
+      </footer>
   </>
   ) 
 }

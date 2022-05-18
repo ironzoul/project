@@ -31,6 +31,7 @@ export default function Recruited({jobs}) {
         <div className={styles.grid}>
         
           {jobs?.length > 0 && jobs.map((job) =>(
+            
         
           <Link href="/">
             <a  className={styles.jobcard}>
@@ -40,8 +41,9 @@ export default function Recruited({jobs}) {
                   duration: .2
                 }
               }}><span><h2 align="center">&nbsp;&nbsp;{job.image}</h2>
+              
             </span></motion.div>
-                    
+              
           </a> 
          
           </Link>
@@ -52,20 +54,7 @@ export default function Recruited({jobs}) {
 
         </main>
 
-        <footer className={styles.footer}>
-        <a
-          href="https://github.com/ironzoul"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Made with ♥ by{' '}
-          <span className={styles.logo}>
-            <Image src="/GitHub.png" alt="Git" width={20} height={20}  />
-            
-          </span>
-          Ketan Pal
-        </a>
-      </footer>
+        
     
     </>
   )
